@@ -1,4 +1,5 @@
 #include <iostream>
+#include "include/player.h"
 
 using namespace std;
 
@@ -6,6 +7,6 @@ Player play[2];
 
 int main()
 {
-    cout << "Hello world!" << endl;
-    return 0;
+    void login();
+    void startGame();
 }
