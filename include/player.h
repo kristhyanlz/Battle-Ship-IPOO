@@ -8,7 +8,7 @@ class Player
         Player();
         virtual ~Player();
         void crear(int n);
-        void atacado(int & a, int & b);
+        bool atacado(int & a, int & b);
     protected:
     private:
 //        string name;
