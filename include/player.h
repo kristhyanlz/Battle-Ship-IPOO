@@ -8,10 +8,12 @@ class Player
         Player();
         virtual ~Player();
         void crear(int n);
+        void atacado(int & a, int & b);
     protected:
     private:
 //        string name;
-        int tam, id, **tabla;
+        int tam, id, **tabla, nRestantes;
+        int stLancha, stBuque, stPortaAviones;
         static int sello;
         bool ini;
 };
