@@ -8,7 +8,10 @@ Player::Player():id(sello), ini(false)
 
 Player::~Player()
 {
-    //dtor
+    for (;tam; --tam ){
+        delete [] *(tabla + tam-1) ;
+    }
+    delete [] tabla;
 }
 
 void Player::crear(int n){
@@ -17,6 +20,7 @@ void Player::crear(int n){
 
     for (;n > 10; n = n - 5){
         ++stLancha; ++stBuque; ++stPortaAviones;
+        nRestantes = stLancha + (stBuque << 1) + (stPortaAviones * 3);
     }
 
     tam = n;
@@ -30,6 +34,15 @@ void Player::crear(int n){
         for (register int j = 0; j < tam; ++j)
             tabla[i][j] = 0;
     }
+}
+
+bool Player::atacado(int & a, int & b){
+    if (tabla[a][b] == 1){
+        tabla[a][b] = 2;
+        --nRestantes;
+    }
+
+    return bool (nRestantes);
 }
 
 int Player::sello = 0;
