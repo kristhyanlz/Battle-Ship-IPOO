@@ -61,10 +61,8 @@ bool login(){
 void startGame(){
     cout << "Ingrese el nombre del Jugador 1: ";
     cin >> play[0].name;
-    cout << play[0].name;
     cout << "Ingrese el nombre del Jugador 2: ";
     cin >> play[1].name;
-    cout << play[1].name;
 }
 
 

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Debug" />
+	<File name="include\interfaz.h" open="1" top="1" tabpos="4">
+		<Cursor position="1426" topLine="42" />
+	</File>
+	<File name="include\player.cpp" open="1" top="0" tabpos="3">
+		<Cursor position="3343" topLine="107" />
+	</File>
+	<File name="include\player.h" open="1" top="0" tabpos="2">
+		<Cursor position="323" topLine="2" />
+	</File>
+	<File name="main.cpp" open="1" top="0" tabpos="1">
+		<Cursor position="114" topLine="0" />
+	</File>
+</CodeBlocks_layout_file>

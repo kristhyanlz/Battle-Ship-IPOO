@@ -1,0 +1,9 @@
+touch README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/kristhyanlz/del.git
+git push -u origin master
+
+
+https://github.com/kristhyanlz/Battle-Ship-IPOO.git
