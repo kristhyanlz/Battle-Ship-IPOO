@@ -54,70 +54,120 @@ void Player::imprimirTablero(){
             if (not tabla[i][j])
                 //cout << "W";
             switch (tabla[i][j]){
-                case 0: cout << " ";
+                case 0: cout << "  ";
                         break;
 
-                case 1: cout << "O";
+                case 1: cout << " O";
                         break;
 
-                case 2: cout << "x";
+                case 2: cout << " x";
                         break;
 
             }
         }
     }
+    cout << endl;
 
 }
 
 bool Player::pose(int & a, int & b){
+    --a; --b;
     if (tabla[a][b] == 1)
         return false;
-    tabla[a][b] = (tabla[a][b] == 0) ? 1 : 1;
+
+    tabla[a][b] = 1;
     return true;
 }
 
-void Player::pintar(){
-    int a[2];
-    int b[2];
-    int c[2];
+bool Player::pintar(){
+    int a[3][2];
     bool check = false;
 
-    cout << "Ingrese posicion: ";
-    cin >> a[0];
-    cin >> a[1];
-    pose(a[0], a[1]);
+    char temp[2][2];//Una cordenada
+
+        cout << "Ingrese posicion del bote: ";
+        //cin >> a[0][0];
+        cin >> temp[0];
+        cin >> temp[1];
+
+        a[0][0] = atoi(temp[0]); a[0][1] = atoi(temp[1]);
+
+        if ( (a[0][0] < 1) or ( a[0][1] < 1) )
+            return false;
+        pose(a[0][0], a[0][1]);
 
     while(not check){
+        cout << "Ingrese posicion del buque: ";
+        cin >> temp[0];
+        cin >> temp[1];
+
+        a[0][0] = atoi(temp[0]); a[0][1] = atoi(temp[1]);
+
+        if ( (a[0][0] < 1) or (a[0][1] < 1) )
+            return false;
+        bool n = pose(a[0][0] , a[0][1] );
+
         cout << "Ingrese posicion: ";
-        cin >> a[0];
-        cin >> a[1];
-        bool n = pose(a[0] , a[1] );
-        cout << "Ingrese posicion: ";
-        cin >> b[0];
-        cin >> b[1];
-        bool m = pose(b[0], b[1]);
-        check = ( (a[0] == b[0]) or (a[1] == b[1])) ?  true : false;
-        check = n and m;
+        cin >> temp[0];
+        cin >> temp[1];
+
+        a[1][0] = atoi(temp[0]);
+        a[1][1] = atoi(temp[1]);
+
+        if ( (a[1][0] < 1) or (a[1][1] < 1) )
+            return false;
+        n = n and pose(a[1][0], a[1][1]);
+
+        check = ( ( (a[0][0] == a[1][0]) or (a[0][1] == a[1][1]) ) ?  true : false) and n;
+        if(not check){
+            cout << "\nLo que ha ingresado es incorrecto";
+            Sleep(2000);
+            system("cls");
+        }
     }
 
     check = false;
 
     while(not check){
-        cout << "Ingrese posicion: ";
-        cin >> a[0];
-        cin >> a[1];
-        bool n = pose(a[0], a[1]);
-        cout << "Ingrese posicion: ";
-        cin >> b[0];
-        cin >> b[1];
-        bool m = pose(b[0], b[1]);
-        check = ( (a[0] == b[0]) or (a[1] == b[1])) ?  true : false;
-        check = n and m;
-        cout << "Ingrese posicion: ";
-        cin >> c[0];
-        cin >> c[1];
-    }
 
+        cout << "Ingrese posicion del porta aviones: ";
+        cin >> temp[0];
+        cin >> temp[1];
+
+        a[0][0] = atoi(temp[0]);
+        a[0][1] = atoi(temp[1]);
+
+        if ( (a[0][0] < 1) or (a[0][1] < 1) )
+            return false;
+        bool n = pose(a[0][0] , a[0][1] );
+
+        cout << "Ingrese posicion: ";
+        cin >> temp[0];
+        cin >> temp[1];
+
+        a[1][0] = atoi(temp[0]);
+        a[1][1] = atoi(temp[1]);
+        n = n and pose(a[1][0], a[1][1]);
+
+        if ( (a[1][0] < 1) or (a[1][1] < 1) )
+            return false;
+
+        cout << "Ingrese posicion: ";
+        cin >> temp[0];
+        cin >> temp[1];
+
+        a[2][0] = atoi(temp[0]);
+        a[2][1] = atoi(temp[1]);
+        n = n and pose(a[2][0], a[2][1]);
+        check = (check and (( (a[0][0] == a[2][0]) or (a[0][1] == a[2][1])) ?  true : false) ) and n;
+
+        if (not check){
+            cout << "\nLo que ha ingresado es incorrecto";
+            Sleep(2000);
+            system("cls");
+        }
+    }
+    return true;
 }
 
 int Player::sello = 0;

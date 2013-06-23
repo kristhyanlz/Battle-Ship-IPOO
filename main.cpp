@@ -4,10 +4,9 @@
 
 int main()
 {
-    //sleep(2);
-    cout << "Helllo"<< endl;
-    cargando();
-    login();
+    //cargando();
+    while ( not login()){}
+
     play[0].imprimirTablero();
     startGame();
 }

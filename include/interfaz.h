@@ -10,39 +10,61 @@
 //using namespace std;
 
 void impri(int n){
-    cout << " Z";
-    for (;n; --n){
-        cout << "A";
+        cout << " [";
+    for(;n;--n){
+        cout << "#";
     }
-    cout << "X";
+    cout << "]  Loading...";
 }
 
 void cargando(){
-    cout << "Kristhyan"<< endl;
-    for(int i = 0; i < 10; ++i){
+    for(int i = 0; i < 11; ++i){
         cout << '\r' << i * 10;
         impri(i);
-        //sleep(2);
+        Sleep(560);
+        system("cls");
     }
 }
 
 Player play[2];
 
-void login(){
+bool login(){
 //    Sleep(2500);
-    cout << "##-- B I E N V E N I D O S   A   B A T T L E   S H I P --##" << endl;
+    cout << "\n===========================================================" << endl;
+    cout << "\n##-- B I E N V E N I D O S   A   B A T T L E   S H I P --##" << endl;
+    cout << "\n===========================================================" << endl;
  //   Sleep(2500);
 //    system("cls");
     cout << "\nIngrese el tamanio del tablero de juego: ";
-    int tam;
+
+    //a = "25";
+    //b = atoi(a);
+
+    char tam[3];
     cin >> tam;
-    play[0].crear(tam);
-    play[1].crear(tam);
+
+    int tam_ = atoi(tam);
+    if ( (tam_ > 40) or (not tam_) ){
+        system("cls");
+        cout << "El numero ingresado es incorrecto\n";
+        return false;
+    }
+
+    play[0].crear(tam_);
+    play[1].crear(tam_);
+
+    system("cls");
+    return true;
 
 }
 
 void startGame(){
-
+    cout << "Ingrese el nombre del Jugador 1: ";
+    cin >> play[0].name;
+    cout << play[0].name;
+    cout << "Ingrese el nombre del Jugador 2: ";
+    cin >> play[1].name;
+    cout << play[1].name;
 }
 
 

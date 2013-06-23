@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1371969636 source:c:\users\kristhyan zubia\desktop\github\battle-ship-ipoo\battle-ship-ipoo\main.cpp
+	"include/interfaz.h"
+
+1371969641 c:\users\kristhyan zubia\desktop\github\battle-ship-ipoo\battle-ship-ipoo\include\interfaz.h
+	"player.h"
+
+1371969039 c:\users\kristhyan zubia\desktop\github\battle-ship-ipoo\battle-ship-ipoo\include\player.h
+	<iostream>
+	<unistd.h>
+	<windows.h>
+
+1371968133 source:c:\users\kristhyan zubia\desktop\github\battle-ship-ipoo\battle-ship-ipoo\include\player.cpp
+	"player.h"
+

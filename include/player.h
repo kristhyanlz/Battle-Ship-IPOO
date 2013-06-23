@@ -3,8 +3,7 @@
 
 #include <iostream>
 #include <unistd.h>
-//#include <string.h>
-//#include <windows.h>
+#include <windows.h>
 //#include <stdlib.h>
 
 using namespace std;
@@ -18,10 +17,12 @@ class Player
         bool atacado(int & a, int & b);
         bool pose(int & a, int & b);
         void imprimirTablero();
-        void pintar();
+        bool pintar();
+
+        friend void startGame();
     protected:
     private:
-//        string name;
+        string name;
         int tam, id, **tabla, nRestantes;
         int stUnidad;
         static int sello;
