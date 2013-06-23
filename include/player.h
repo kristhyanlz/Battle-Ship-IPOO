@@ -1,6 +1,13 @@
 #ifndef PLAYER_H
 #define PLAYER_H
-#include <string.h>
+
+#include <iostream>
+#include <unistd.h>
+//#include <string.h>
+//#include <windows.h>
+//#include <stdlib.h>
+
+using namespace std;
 
 class Player
 {
@@ -9,11 +16,14 @@ class Player
         virtual ~Player();
         void crear(int n);
         bool atacado(int & a, int & b);
+        bool pose(int & a, int & b);
+        void imprimirTablero();
+        void pintar();
     protected:
     private:
 //        string name;
         int tam, id, **tabla, nRestantes;
-        int stLancha, stBuque, stPortaAviones;
+        int stUnidad;
         static int sello;
         bool ini;
 };
