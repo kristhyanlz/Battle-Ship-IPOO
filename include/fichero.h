@@ -18,8 +18,11 @@ class Fichero
         virtual ~Fichero();
         fstream write;
         ifstream read;
+        void agregarDatos(string text);
         void restart();
         void clearf();
+        void operator = (string text);
+        void ini(string  __file);
         //void hide(string & txt);
     protected:
         int lv;
@@ -27,7 +30,7 @@ class Fichero
     private:
         char * file;
         void copyTo(string raiz);
-        void ini(string  __file);
+
 };
 
 #endif // FICHERO_H

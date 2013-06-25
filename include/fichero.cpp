@@ -12,6 +12,26 @@ Fichero::~Fichero(){
     read.close();
 }
 
+void Fichero::agregarDatos(string text){
+    text += "\n";
+    ofstream temp("temp.bsd");
+    string line, acum;
+    getline(read, line);
+    acum = line;
+    acum += "\n";
+
+    while(read.good()){
+        getline(read, line);
+        acum += line;
+        acum += "\n";
+    }
+
+    temp << acum;
+    temp.close();
+    clearf();
+    write << text;
+}
+
 void Fichero::restart()
 {
     write.close();
@@ -25,17 +45,8 @@ void Fichero::clearf()
     restart();
 }
 
-void Fichero::copyTo(string raiz)
-{
-    int tam;
-    for(tam = 0; raiz[tam]; tam++){}
-
-    file = new char[tam + 1];
-
-    for(int i = 0; i <= tam; i++)
-        file[i] = raiz[i];
-
-    file[tam] = '\0';
+void Fichero::operator = (string text){
+    ini(text);
 }
 
 void Fichero:: ini(string  __file)
@@ -54,3 +65,15 @@ void Fichero:: ini(string  __file)
     }
     read.open(file);
 }
+
+
+void Fichero::copyTo(string raiz)
+{
+    file = new char[raiz.length() + 1];
+
+    for(register int i = 0; i <= raiz.length(); ++i)
+        file[i] = raiz[i];
+
+    //file[raiz.length()] = '\0';
+}
+

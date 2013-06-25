@@ -37,19 +37,26 @@
 1372171074 c:\users\kristhyan_zubia\mis documentos\githubp\battle-ship-ipoo\include\interfaz.h
 	"player.h"
 
-1371970949 source:/home/kristhyan_zubia/gitHubP/Battle-Ship-IPOO/include/player.cpp
+1372177363 source:/home/kristhyan_zubia/gitHubP/Battle-Ship-IPOO/include/player.cpp
+	"player.h"
 	"player.h"
 
-1372176639 /home/kristhyan_zubia/gitHubP/Battle-Ship-IPOO/include/player.h
+1372177347 /home/kristhyan_zubia/gitHubP/Battle-Ship-IPOO/include/player.h
 	<iostream>
 	<unistd.h>
 	<windows.h>
 	<fstream>
+	<iostream>
+	<unistd.h>
+	<fstream>
+	"fichero.h"
 
 1372034668 source:/home/kristhyan_zubia/gitHubP/Battle-Ship-IPOO/main.cpp
 	"include/interfaz.h"
+	"include/interfaz.h"
 
-1372171074 /home/kristhyan_zubia/gitHubP/Battle-Ship-IPOO/include/interfaz.h
+1372177367 /home/kristhyan_zubia/gitHubP/Battle-Ship-IPOO/include/interfaz.h
+	"player.h"
 	"player.h"
 
 1372176696 source:c:\users\kristhyan_zubia\mis documentos\githubp\battle-ship-ipoo\include\fichero.cpp
@@ -62,15 +69,6 @@
 	<string>
 	<fstream>
 
-1372177363 source:/home/kristhyan_zubia/gitHubP/Battle-Ship-IPOO/include/player.cpp
-	"player.h"
-
-1372177347 /home/kristhyan_zubia/gitHubP/Battle-Ship-IPOO/include/player.h
-	<iostream>
-	<unistd.h>
-	<fstream>
-	"fichero.h"
-
 1372177500 /home/kristhyan_zubia/gitHubP/Battle-Ship-IPOO/include/fichero.h
 	<iostream>
 	<unistd.h>
@@ -78,9 +76,27 @@
 	<string>
 	<fstream>
 
-1372034668 source:/home/kristhyan_zubia/gitHubP/Battle-Ship-IPOO/main.cpp
+1372191522 source:c:\users\kristhyan zubia\desktop\github\battle-ship-ipoo\main.cpp
 	"include/interfaz.h"
 
-1372177367 /home/kristhyan_zubia/gitHubP/Battle-Ship-IPOO/include/interfaz.h
+1372191522 c:\users\kristhyan zubia\desktop\github\battle-ship-ipoo\include\interfaz.h
 	"player.h"
+
+1372194922 c:\users\kristhyan zubia\desktop\github\battle-ship-ipoo\include\player.h
+	<iostream>
+	<windows.h>
+	"fichero.h"
+
+1372193994 c:\users\kristhyan zubia\desktop\github\battle-ship-ipoo\include\fichero.h
+	<iostream>
+	<unistd.h>
+	<stdlib.h>
+	<string>
+	<fstream>
+
+1372194698 source:c:\users\kristhyan zubia\desktop\github\battle-ship-ipoo\include\player.cpp
+	"player.h"
+
+1372193994 source:c:\users\kristhyan zubia\desktop\github\battle-ship-ipoo\include\fichero.cpp
+	"fichero.h"
 

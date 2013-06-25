@@ -2,11 +2,9 @@
 #define PLAYER_H
 
 #include <iostream>
-#include <unistd.h>
-//#include <windows.h>
-#include <fstream>
+//#include <unistd.h>
+#include <windows.h>
 #include "fichero.h"
-//#include <stdlib.h>
 
 using namespace std;
 
@@ -21,12 +19,12 @@ class Player
         void imprimirTablero();
         bool pintar();
 
-        friend void startGame();
+        friend void login();
     protected:
     private:
+        Fichero records;
         string name;
         int tam, id, **tabla, nRestantes;
-        int stUnidad;
         static int sello;
         bool ini;
 };

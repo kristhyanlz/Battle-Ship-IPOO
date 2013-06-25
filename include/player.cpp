@@ -1,9 +1,8 @@
 #include "player.h"
 
-Player::Player():id(sello), ini(false)
-{
+Player::Player():id(sello), ini(false){
+    records.ini("records.txt");
     ++sello;
-    stUnidad = 1;
 }
 
 Player::~Player()
@@ -14,14 +13,14 @@ Player::~Player()
     delete [] tabla;
 }
 
-void Player::crear(int n){
-    if (n < 10){
+void Player::crear(int n){// void ini() // Metodo
+    if (n < 10)
         n = 10;
-    }
+
+    int stUnidad = 1;
 
     tam = n;
     ini = true;
-    //name = name_;
     tabla = new int * [n];
     for (register int i = 0; i < n; ++i)
         tabla[i] = new int [n];
@@ -48,9 +47,9 @@ bool Player::atacado(int & a, int & b){
 }
 
 void Player::imprimirTablero(){
-    for (int i = 0; i < tam; ++i){
+    for (register int i = 0; i < tam; ++i){
         cout << endl;
-        for (int j = 0; j < tam; ++j){
+        for (register int j = 0; j < tam; ++j){
             if (not tabla[i][j])
                 //cout << "W";
             switch (tabla[i][j]){
@@ -121,7 +120,7 @@ bool Player::pintar(){
         check = ( ( (a[0][0] == a[1][0]) or (a[0][1] == a[1][1]) ) ?  true : false) and n;
         if(not check){
             cout << "\nLo que ha ingresado es incorrecto";
-//            Sleep(2000);
+            Sleep(2000);
             system("cls");
         }
     }
@@ -163,11 +162,13 @@ bool Player::pintar(){
 
         if (not check){
             cout << "\nLo que ha ingresado es incorrecto";
-//            Sleep(2000);
+            Sleep(2000);
             system("cls");
         }
     }
     return true;
 }
+
+//Fichero Player::records = "mono.txt";
 
 int Player::sello = 0;
