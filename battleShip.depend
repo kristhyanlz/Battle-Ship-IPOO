@@ -2,14 +2,85 @@
 1371969636 source:c:\users\kristhyan zubia\desktop\github\battle-ship-ipoo\battle-ship-ipoo\main.cpp
 	"include/interfaz.h"
 
+1372034668 nterfaz.h"
+
 1371969641 c:\users\kristhyan zubia\desktop\github\battle-ship-ipoo\battle-ship-ipoo\include\interfaz.h
 	"player.h"
+
+1372176680 
 
 1371969039 c:\users\kristhyan zubia\desktop\github\battle-ship-ipoo\battle-ship-ipoo\include\player.h
 	<iostream>
 	<unistd.h>
 	<windows.h>
 
+1371969039 >
+
 1371968133 source:c:\users\kristhyan zubia\desktop\github\battle-ship-ipoo\battle-ship-ipoo\include\player.cpp
+	"player.h"
+
+1372177033 source:c:\users\kristhyan_zubia\mis documentos\githubp\battle-ship-ipoo\include\player.cpp
+	"player.h"
+
+1372177288 c:\users\kristhyan_zubia\mis documentos\githubp\battle-ship-ipoo\include\player.h
+	<iostream>
+	<unistd.h>
+	<windows.h>
+	<fstream>
+	"fichero.h"
+
+1372176696 "
+
+1372034668 source:c:\users\kristhyan_zubia\mis documentos\githubp\battle-ship-ipoo\main.cpp
+	"include/interfaz.h"
+
+1372171074 c:\users\kristhyan_zubia\mis documentos\githubp\battle-ship-ipoo\include\interfaz.h
+	"player.h"
+
+1371970949 source:/home/kristhyan_zubia/gitHubP/Battle-Ship-IPOO/include/player.cpp
+	"player.h"
+
+1372176639 /home/kristhyan_zubia/gitHubP/Battle-Ship-IPOO/include/player.h
+	<iostream>
+	<unistd.h>
+	<windows.h>
+	<fstream>
+
+1372034668 source:/home/kristhyan_zubia/gitHubP/Battle-Ship-IPOO/main.cpp
+	"include/interfaz.h"
+
+1372171074 /home/kristhyan_zubia/gitHubP/Battle-Ship-IPOO/include/interfaz.h
+	"player.h"
+
+1372176696 source:c:\users\kristhyan_zubia\mis documentos\githubp\battle-ship-ipoo\include\fichero.cpp
+	"fichero.h"
+
+1372176680 c:\users\kristhyan_zubia\mis documentos\githubp\battle-ship-ipoo\include\fichero.h
+	<iostream>
+	<unistd.h>
+	<stdlib.h>
+	<string>
+	<fstream>
+
+1372177363 source:/home/kristhyan_zubia/gitHubP/Battle-Ship-IPOO/include/player.cpp
+	"player.h"
+
+1372177347 /home/kristhyan_zubia/gitHubP/Battle-Ship-IPOO/include/player.h
+	<iostream>
+	<unistd.h>
+	<fstream>
+	"fichero.h"
+
+1372177500 /home/kristhyan_zubia/gitHubP/Battle-Ship-IPOO/include/fichero.h
+	<iostream>
+	<unistd.h>
+	<stdlib.h>
+	<string>
+	<fstream>
+
+1372034668 source:/home/kristhyan_zubia/gitHubP/Battle-Ship-IPOO/main.cpp
+	"include/interfaz.h"
+
+1372177367 /home/kristhyan_zubia/gitHubP/Battle-Ship-IPOO/include/interfaz.h
 	"player.h"
 

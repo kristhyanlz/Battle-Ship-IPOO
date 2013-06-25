@@ -3,7 +3,9 @@
 
 #include <iostream>
 #include <unistd.h>
-#include <windows.h>
+//#include <windows.h>
+#include <fstream>
+#include "fichero.h"
 //#include <stdlib.h>
 
 using namespace std;

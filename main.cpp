@@ -4,7 +4,8 @@
 
 int main()
 {
-    //cargando();
+    cargando();
+
     while ( not login()){}
 
     play[0].imprimirTablero();

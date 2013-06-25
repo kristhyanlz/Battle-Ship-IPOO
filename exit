@@ -1,0 +1,766 @@
+commit 28209a75f46571ffed82f98a73944a4e18161cc1
+Author: Kristhyan <kristhyanl.zubia@gmail.com>
+Date:   Sun Jun 23 11:42:34 2013 -0500
+
+    Archivos actualizados
+
+diff --git a/Tuto.txt b/Tuto.txt
+new file mode 100644
+index 0000000..bcb5672
+--- /dev/null
++++ b/Tuto.txt
+@@ -0,0 +1,9 @@
++touch README.md
++git init
++git add README.md
++git commit -m "first commit"
++git remote add origin https://github.com/kristhyanlz/del.git
++git push -u origin master
++
++
++https://github.com/kristhyanlz/Battle-Ship-IPOO.git
+\ No newline at end of file
+diff --git a/battleShip.cbp b/battleShip.cbp
+index c29cc41..cd4c18c 100644
+--- a/battleShip.cbp
++++ b/battleShip.cbp
+@@ -1,44 +1,44 @@
+-<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+-<CodeBlocks_project_file>
+-	<FileVersion major="1" minor="6" />
+-	<Project>
+-		<Option title="battleShip" />
+-		<Option pch_mode="2" />
+-		<Option compiler="gcc" />
+-		<Build>
+-			<Target title="Debug">
+-				<Option output="bin/Debug/battleShip" prefix_auto="1" extension_auto="1" />
+-				<Option object_output="obj/Debug/" />
+-				<Option type="1" />
+-				<Option compiler="gcc" />
+-				<Compiler>
+-					<Add option="-g" />
+-				</Compiler>
+-			</Target>
+-			<Target title="Release">
+-				<Option output="bin/Release/battleShip" prefix_auto="1" extension_auto="1" />
+-				<Option object_output="obj/Release/" />
+-				<Option type="1" />
+-				<Option compiler="gcc" />
+-				<Compiler>
+-					<Add option="-O2" />
+-				</Compiler>
+-				<Linker>
+-					<Add option="-s" />
+-				</Linker>
+-			</Target>
+-		</Build>
+-		<Compiler>
+-			<Add option="-Wall" />
+-			<Add option="-fexceptions" />
+-		</Compiler>
+-		<Unit filename="include/interfaz.h" />
+-		<Unit filename="include/player.cpp" />
+-		<Unit filename="include/player.h" />
+-		<Unit filename="main.cpp" />
+-		<Extensions>
+-			<code_completion />
+-			<debugger />
+-		</Extensions>
+-	</Project>
+-</CodeBlocks_project_file>
++<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
++<CodeBlocks_project_file>
++	<FileVersion major="1" minor="6" />
++	<Project>
++		<Option title="battleShip" />
++		<Option pch_mode="2" />
++		<Option compiler="gcc" />
++		<Build>
++			<Target title="Debug">
++				<Option output="bin/Debug/battleShip" prefix_auto="1" extension_auto="1" />
++				<Option object_output="obj/Debug/" />
++				<Option type="1" />
++				<Option compiler="gcc" />
++				<Compiler>
++					<Add option="-g" />
++				</Compiler>
++			</Target>
++			<Target title="Release">
++				<Option output="bin/Release/battleShip" prefix_auto="1" extension_auto="1" />
++				<Option object_output="obj/Release/" />
++				<Option type="1" />
++				<Option compiler="gcc" />
++				<Compiler>
++					<Add option="-O2" />
++				</Compiler>
++				<Linker>
++					<Add option="-s" />
++				</Linker>
++			</Target>
++		</Build>
++		<Compiler>
++			<Add option="-Wall" />
++			<Add option="-fexceptions" />
++		</Compiler>
++		<Unit filename="include/interfaz.h" />
++		<Unit filename="include/player.cpp" />
++		<Unit filename="include/player.h" />
++		<Unit filename="main.cpp" />
++		<Extensions>
++			<code_completion />
++			<debugger />
++		</Extensions>
++	</Project>
++</CodeBlocks_project_file>
+diff --git a/battleShip.depend b/battleShip.depend
+index 2977eb3..44ac690 100644
+--- a/battleShip.depend
++++ b/battleShip.depend
+@@ -1,15 +1,15 @@
+-# depslib dependency file v1.0
+-1371969636 source:c:\users\kristhyan zubia\desktop\github\battle-ship-ipoo\battle-ship-ipoo\main.cpp
+-	"include/interfaz.h"
+-
+-1371969641 c:\users\kristhyan zubia\desktop\github\battle-ship-ipoo\battle-ship-ipoo\include\interfaz.h
+-	"player.h"
+-
+-1371969039 c:\users\kristhyan zubia\desktop\github\battle-ship-ipoo\battle-ship-ipoo\include\player.h
+-	<iostream>
+-	<unistd.h>
+-	<windows.h>
+-
+-1371968133 source:c:\users\kristhyan zubia\desktop\github\battle-ship-ipoo\battle-ship-ipoo\include\player.cpp
+-	"player.h"
+-
++# depslib dependency file v1.0
++1371969636 source:c:\users\kristhyan zubia\desktop\github\battle-ship-ipoo\battle-ship-ipoo\main.cpp
++	"include/interfaz.h"
++
++1371969641 c:\users\kristhyan zubia\desktop\github\battle-ship-ipoo\battle-ship-ipoo\include\interfaz.h
++	"player.h"
++
++1371969039 c:\users\kristhyan zubia\desktop\github\battle-ship-ipoo\battle-ship-ipoo\include\player.h
++	<iostream>
++	<unistd.h>
++	<windows.h>
++
++1371968133 source:c:\users\kristhyan zubia\desktop\github\battle-ship-ipoo\battle-ship-ipoo\include\player.cpp
++	"player.h"
++
+diff --git a/battleShip.layout b/battleShip.layout
+new file mode 100644
+index 0000000..96a5028
+--- /dev/null
++++ b/battleShip.layout
+@@ -0,0 +1,16 @@
++<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
++<CodeBlocks_layout_file>
++	<ActiveTarget name="Debug" />
++	<File name="include\interfaz.h" open="1" top="1" tabpos="4">
++		<Cursor position="1426" topLine="42" />
++	</File>
++	<File name="include\player.cpp" open="1" top="0" tabpos="3">
++		<Cursor position="3343" topLine="107" />
++	</File>
++	<File name="include\player.h" open="1" top="0" tabpos="2">
++		<Cursor position="323" topLine="2" />
++	</File>
++	<File name="main.cpp" open="1" top="0" tabpos="1">
++		<Cursor position="114" topLine="0" />
++	</File>
++</CodeBlocks_layout_file>
+diff --git a/include/interfaz.h b/include/interfaz.h
+index d81ca8e..696e976 100644
+--- a/include/interfaz.h
++++ b/include/interfaz.h
+@@ -1,71 +1,69 @@
+-#ifndef INTERFAZ_H_INCLUDED
+-#define INTERFAZ_H_INCLUDED
+-#include "player.h"
+-
+-//#include <iostream>
+-//#include <string.h>
+-//#include <windows.h>
+-//#include <stdlib.h>
+-
+-//using namespace std;
+-
+-void impri(int n){
+-        cout << " [";
+-    for(;n;--n){
+-        cout << "#";
+-    }
+-    cout << "]  Loading...";
+-}
+-
+-void cargando(){
+-    for(int i = 0; i < 11; ++i){
+-        cout << '\r' << i * 10;
+-        impri(i);
+-        Sleep(560);
+-        system("cls");
+-    }
+-}
+-
+-Player play[2];
+-
+-bool login(){
+-//    Sleep(2500);
+-    cout << "\n===========================================================" << endl;
+-    cout << "\n##-- B I E N V E N I D O S   A   B A T T L E   S H I P --##" << endl;
+-    cout << "\n===========================================================" << endl;
+- //   Sleep(2500);
+-//    system("cls");
+-    cout << "\nIngrese el tamanio del tablero de juego: ";
+-
+-    //a = "25";
+-    //b = atoi(a);
+-
+-    char tam[3];
+-    cin >> tam;
+-
+-    int tam_ = atoi(tam);
+-    if ( (tam_ > 40) or (not tam_) ){
+-        system("cls");
+-        cout << "El numero ingresado es incorrecto\n";
+-        return false;
+-    }
+-
+-    play[0].crear(tam_);
+-    play[1].crear(tam_);
+-
+-    system("cls");
+-    return true;
+-
+-}
+-
+-void startGame(){
+-    cout << "Ingrese el nombre del Jugador 1: ";
+-    cin >> play[0].name;
+-    cout << play[0].name;
+-    cout << "Ingrese el nombre del Jugador 2: ";
+-    cin >> play[1].name;
+-    cout << play[1].name;
+-}
+-
+-
+-#endif // INTERFAZ_H_INCLUDED
++#ifndef INTERFAZ_H_INCLUDED
++#define INTERFAZ_H_INCLUDED
++#include "player.h"
++
++//#include <iostream>
++//#include <string.h>
++//#include <windows.h>
++//#include <stdlib.h>
++
++//using namespace std;
++
++void impri(int n){
++        cout << " [";
++    for(;n;--n){
++        cout << "#";
++    }
++    cout << "]  Loading...";
++}
++
++void cargando(){
++    for(int i = 0; i < 11; ++i){
++        cout << '\r' << i * 10;
++        impri(i);
++        Sleep(560);
++        system("cls");
++    }
++}
++
++Player play[2];
++
++bool login(){
++//    Sleep(2500);
++    cout << "\n===========================================================" << endl;
++    cout << "\n##-- B I E N V E N I D O S   A   B A T T L E   S H I P --##" << endl;
++    cout << "\n===========================================================" << endl;
++ //   Sleep(2500);
++//    system("cls");
++    cout << "\nIngrese el tamanio del tablero de juego: ";
++
++    //a = "25";
++    //b = atoi(a);
++
++    char tam[3];
++    cin >> tam;
++
++    int tam_ = atoi(tam);
++    if ( (tam_ > 40) or (not tam_) ){
++        system("cls");
++        cout << "El numero ingresado es incorrecto\n";
++        return false;
++    }
++
++    play[0].crear(tam_);
++    play[1].crear(tam_);
++
++    system("cls");
++    return true;
++
++}
++
++void startGame(){
++    cout << "Ingrese el nombre del Jugador 1: ";
++    cin >> play[0].name;
++    cout << "Ingrese el nombre del Jugador 2: ";
++    cin >> play[1].name;
++}
++
++
++#endif // INTERFAZ_H_INCLUDED
+diff --git a/include/player.cpp b/include/player.cpp
+index 24d57a4..899b3b8 100644
+--- a/include/player.cpp
++++ b/include/player.cpp
+@@ -1,173 +1,173 @@
+-#include "player.h"
+-
+-Player::Player():id(sello), ini(false)
+-{
+-    ++sello;
+-    stUnidad = 1;
+-}
+-
+-Player::~Player()
+-{
+-    for (;tam; --tam ){
+-        delete [] *(tabla + tam-1) ;
+-    }
+-    delete [] tabla;
+-}
+-
+-void Player::crear(int n){
+-    if (n < 10){
+-        n = 10;
+-    }
+-
+-    tam = n;
+-    ini = true;
+-    //name = name_;
+-    tabla = new int * [n];
+-    for (register int i = 0; i < n; ++i)
+-        tabla[i] = new int [n];
+-
+-    for(register int i = 0; i < tam; ++i){
+-        for (int j = 0; j < tam; ++j)
+-            tabla[i][j] = 0;
+-    }
+-
+-    for (;n > 10; n = n - 5){
+-        ++ stUnidad;
+-    }
+-
+-    nRestantes = stUnidad + (stUnidad << 1) + (stUnidad* 3);
+-}
+-
+-bool Player::atacado(int & a, int & b){
+-    if (tabla[a][b] == 1){
+-        tabla[a][b] = 2;
+-        --nRestantes;
+-    }
+-
+-    return bool (nRestantes);
+-}
+-
+-void Player::imprimirTablero(){
+-    for (int i = 0; i < tam; ++i){
+-        cout << endl;
+-        for (int j = 0; j < tam; ++j){
+-            if (not tabla[i][j])
+-                //cout << "W";
+-            switch (tabla[i][j]){
+-                case 0: cout << "  ";
+-                        break;
+-
+-                case 1: cout << " O";
+-                        break;
+-
+-                case 2: cout << " x";
+-                        break;
+-
+-            }
+-        }
+-    }
+-    cout << endl;
+-
+-}
+-
+-bool Player::pose(int & a, int & b){
+-    --a; --b;
+-    if (tabla[a][b] == 1)
+-        return false;
+-
+-    tabla[a][b] = 1;
+-    return true;
+-}
+-
+-bool Player::pintar(){
+-    int a[3][2];
+-    bool check = false;
+-
+-    char temp[2][2];//Una cordenada
+-
+-        cout << "Ingrese posicion del bote: ";
+-        //cin >> a[0][0];
+-        cin >> temp[0];
+-        cin >> temp[1];
+-
+-        a[0][0] = atoi(temp[0]); a[0][1] = atoi(temp[1]);
+-
+-        if ( (a[0][0] < 1) or ( a[0][1] < 1) )
+-            return false;
+-        pose(a[0][0], a[0][1]);
+-
+-    while(not check){
+-        cout << "Ingrese posicion del buque: ";
+-        cin >> temp[0];
+-        cin >> temp[1];
+-
+-        a[0][0] = atoi(temp[0]); a[0][1] = atoi(temp[1]);
+-
+-        if ( (a[0][0] < 1) or (a[0][1] < 1) )
+-            return false;
+-        bool n = pose(a[0][0] , a[0][1] );
+-
+-        cout << "Ingrese posicion: ";
+-        cin >> temp[0];
+-        cin >> temp[1];
+-
+-        a[1][0] = atoi(temp[0]);
+-        a[1][1] = atoi(temp[1]);
+-
+-        if ( (a[1][0] < 1) or (a[1][1] < 1) )
+-            return false;
+-        n = n and pose(a[1][0], a[1][1]);
+-
+-        check = ( ( (a[0][0] == a[1][0]) or (a[0][1] == a[1][1]) ) ?  true : false) and n;
+-        if(not check){
+-            cout << "\nLo que ha ingresado es incorrecto";
+-            Sleep(2000);
+-            system("cls");
+-        }
+-    }
+-
+-    check = false;
+-
+-    while(not check){
+-
+-        cout << "Ingrese posicion del porta aviones: ";
+-        cin >> temp[0];
+-        cin >> temp[1];
+-
+-        a[0][0] = atoi(temp[0]);
+-        a[0][1] = atoi(temp[1]);
+-
+-        if ( (a[0][0] < 1) or (a[0][1] < 1) )
+-            return false;
+-        bool n = pose(a[0][0] , a[0][1] );
+-
+-        cout << "Ingrese posicion: ";
+-        cin >> temp[0];
+-        cin >> temp[1];
+-
+-        a[1][0] = atoi(temp[0]);
+-        a[1][1] = atoi(temp[1]);
+-        n = n and pose(a[1][0], a[1][1]);
+-
+-        if ( (a[1][0] < 1) or (a[1][1] < 1) )
+-            return false;
+-
+-        cout << "Ingrese posicion: ";
+-        cin >> temp[0];
+-        cin >> temp[1];
+-
+-        a[2][0] = atoi(temp[0]);
+-        a[2][1] = atoi(temp[1]);
+-        n = n and pose(a[2][0], a[2][1]);
+-        check = (check and (( (a[0][0] == a[2][0]) or (a[0][1] == a[2][1])) ?  true : false) ) and n;
+-
+-        if (not check){
+-            cout << "\nLo que ha ingresado es incorrecto";
+-            Sleep(2000);
+-            system("cls");
+-        }
+-    }
+-    return true;
+-}
+-
+-int Player::sello = 0;
++#include "player.h"
++
++Player::Player():id(sello), ini(false)
++{
++    ++sello;
++    stUnidad = 1;
++}
++
++Player::~Player()
++{
++    for (;tam; --tam ){
++        delete [] *(tabla + tam-1) ;
++    }
++    delete [] tabla;
++}
++
++void Player::crear(int n){
++    if (n < 10){
++        n = 10;
++    }
++
++    tam = n;
++    ini = true;
++    //name = name_;
++    tabla = new int * [n];
++    for (register int i = 0; i < n; ++i)
++        tabla[i] = new int [n];
++
++    for(register int i = 0; i < tam; ++i){
++        for (int j = 0; j < tam; ++j)
++            tabla[i][j] = 0;
++    }
++
++    for (;n > 10; n = n - 5){
++        ++ stUnidad;
++    }
++
++    nRestantes = stUnidad + (stUnidad << 1) + (stUnidad* 3);
++}
++
++bool Player::atacado(int & a, int & b){
++    if (tabla[a][b] == 1){
++        tabla[a][b] = 2;
++        --nRestantes;
++    }
++
++    return bool (nRestantes);
++}
++
++void Player::imprimirTablero(){
++    for (int i = 0; i < tam; ++i){
++        cout << endl;
++        for (int j = 0; j < tam; ++j){
++            if (not tabla[i][j])
++                //cout << "W";
++            switch (tabla[i][j]){
++                case 0: cout << "  ";
++                        break;
++
++                case 1: cout << " O";
++                        break;
++
++                case 2: cout << " x";
++                        break;
++
++            }
++        }
++    }
++    cout << endl;
++
++}
++
++bool Player::pose(int & a, int & b){
++    --a; --b;
++    if (tabla[a][b] == 1)
++        return false;
++
++    tabla[a][b] = 1;
++    return true;
++}
++
++bool Player::pintar(){
++    int a[3][2];
++    bool check = false;
++
++    char temp[2][2];//Una cordenada
++
++        cout << "Ingrese posicion del bote: ";
++        //cin >> a[0][0];
++        cin >> temp[0];
++        cin >> temp[1];
++
++        a[0][0] = atoi(temp[0]); a[0][1] = atoi(temp[1]);
++
++        if ( (a[0][0] < 1) or ( a[0][1] < 1) )
++            return false;
++        pose(a[0][0], a[0][1]);
++
++    while(not check){
++        cout << "Ingrese posicion del buque: ";
++        cin >> temp[0];
++        cin >> temp[1];
++
++        a[0][0] = atoi(temp[0]); a[0][1] = atoi(temp[1]);
++
++        if ( (a[0][0] < 1) or (a[0][1] < 1) )
++            return false;
++        bool n = pose(a[0][0] , a[0][1] );
++
++        cout << "Ingrese posicion: ";
++        cin >> temp[0];
++        cin >> temp[1];
++
++        a[1][0] = atoi(temp[0]);
++        a[1][1] = atoi(temp[1]);
++
++        if ( (a[1][0] < 1) or (a[1][1] < 1) )
++            return false;
++        n = n and pose(a[1][0], a[1][1]);
++
++        check = ( ( (a[0][0] == a[1][0]) or (a[0][1] == a[1][1]) ) ?  true : false) and n;
++        if(not check){
++            cout << "\nLo que ha ingresado es incorrecto";
++            Sleep(2000);
++            system("cls");
++        }
++    }
++
++    check = false;
++
++    while(not check){
++
++        cout << "Ingrese posicion del porta aviones: ";
++        cin >> temp[0];
++        cin >> temp[1];
++
++        a[0][0] = atoi(temp[0]);
++        a[0][1] = atoi(temp[1]);
++
++        if ( (a[0][0] < 1) or (a[0][1] < 1) )
++            return false;
++        bool n = pose(a[0][0] , a[0][1] );
++
++        cout << "Ingrese posicion: ";
++        cin >> temp[0];
++        cin >> temp[1];
++
++        a[1][0] = atoi(temp[0]);
++        a[1][1] = atoi(temp[1]);
++        n = n and pose(a[1][0], a[1][1]);
++
++        if ( (a[1][0] < 1) or (a[1][1] < 1) )
++            return false;
++
++        cout << "Ingrese posicion: ";
++        cin >> temp[0];
++        cin >> temp[1];
++
++        a[2][0] = atoi(temp[0]);
++        a[2][1] = atoi(temp[1]);
++        n = n and pose(a[2][0], a[2][1]);
++        check = (check and (( (a[0][0] == a[2][0]) or (a[0][1] == a[2][1])) ?  true : false) ) and n;
++
++        if (not check){
++            cout << "\nLo que ha ingresado es incorrecto";
++            Sleep(2000);
++            system("cls");
++        }
++    }
++    return true;
++}
++
++int Player::sello = 0;
+diff --git a/include/player.h b/include/player.h
+index a81416c..53e7dc7 100644
+--- a/include/player.h
++++ b/include/player.h
+@@ -1,32 +1,32 @@
+-#ifndef PLAYER_H
+-#define PLAYER_H
+-
+-#include <iostream>
+-#include <unistd.h>
+-#include <windows.h>
+-//#include <stdlib.h>
+-
+-using namespace std;
+-
+-class Player
+-{
+-    public:
+-        Player();
+-        virtual ~Player();
+-        void crear(int n);
+-        bool atacado(int & a, int & b);
+-        bool pose(int & a, int & b);
+-        void imprimirTablero();
+-        bool pintar();
+-
+-        friend void startGame();
+-    protected:
+-    private:
+-        string name;
+-        int tam, id, **tabla, nRestantes;
+-        int stUnidad;
+-        static int sello;
+-        bool ini;
+-};
+-
+-#endif // PLAYER_H
++#ifndef PLAYER_H
++#define PLAYER_H
++
++#include <iostream>
++#include <unistd.h>
++#include <windows.h>
++//#include <stdlib.h>
++
++using namespace std;
++
++class Player
++{
++    public:
++        Player();
++        virtual ~Player();
++        void crear(int n);
++        bool atacado(int & a, int & b);
++        bool pose(int & a, int & b);
++        void imprimirTablero();
++        bool pintar();
++
++        friend void startGame();
++    protected:
++    private:
++        string name;
++        int tam, id, **tabla, nRestantes;
++        int stUnidad;
++        static int sello;
++        bool ini;
++};
++
++#endif // PLAYER_H
+diff --git a/main.cpp b/main.cpp
+index 7d9dc7f..ecefc82 100644
+--- a/main.cpp
++++ b/main.cpp
+@@ -1,12 +1,12 @@
+-#include "include/interfaz.h"
+-
+-//Player playo[2];
+-
+-int main()
+-{
+-    //cargando();
+-    while ( not login()){}
+-
+-    play[0].imprimirTablero();
+-    startGame();
+-}
++#include "include/interfaz.h"
++
++//Player playo[2];
++
++int main()
++{
++    //cargando();
++    while ( not login()){}
++
++    play[0].imprimirTablero();
++    startGame();
++}

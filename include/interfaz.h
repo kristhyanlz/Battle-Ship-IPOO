@@ -21,7 +21,7 @@ void cargando(){
     for(int i = 0; i < 11; ++i){
         cout << '\r' << i * 10;
         impri(i);
-        Sleep(560);
+//        Sleep(560);
         system("cls");
     }
 }
@@ -45,8 +45,10 @@ bool login(){
 
     int tam_ = atoi(tam);
     if ( (tam_ > 40) or (not tam_) ){
-        system("cls");
+        //system("cls");
         cout << "El numero ingresado es incorrecto\n";
+        //Sleep(1500);
+        system("cls");
         return false;
     }
 

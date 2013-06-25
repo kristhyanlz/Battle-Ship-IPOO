@@ -121,7 +121,7 @@ bool Player::pintar(){
         check = ( ( (a[0][0] == a[1][0]) or (a[0][1] == a[1][1]) ) ?  true : false) and n;
         if(not check){
             cout << "\nLo que ha ingresado es incorrecto";
-            Sleep(2000);
+//            Sleep(2000);
             system("cls");
         }
     }
@@ -163,7 +163,7 @@ bool Player::pintar(){
 
         if (not check){
             cout << "\nLo que ha ingresado es incorrecto";
-            Sleep(2000);
+//            Sleep(2000);
             system("cls");
         }
     }
