@@ -21,6 +21,9 @@ class Player
 
         friend void login();
         friend void game();
+
+        friend void game();
+
     protected:
     private:
         string name;

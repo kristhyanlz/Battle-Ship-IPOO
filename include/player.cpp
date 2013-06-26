@@ -42,7 +42,7 @@ void Player::imprimirTablero(bool idx){
             //if (not tabla[idx][i][j])
                 //cout << "W";
             switch (tabla[idx][i][j]){
-                case 0: cout << " W";
+                case 0: cout << "  ";
                         break;
 
                 //case 0: cout << "  ";
@@ -67,12 +67,14 @@ void Player::imprimirTablero(bool idx){
 bool Player::pose(int a, int b, bool idx){
     --a; --b;
     int cond = (int(idx)) + 1;
-    if ( (tabla[idx][a][b] == cond) or (tabla[idx][a][b] == (cond + 1) ) )
+    if ( (tabla[0][a][b] == cond) or (tabla[0][a][b] == (cond + 1) ) )
         return false;
 
-    tabla[idx][a][b] = (tabla[idx][a][b] == 1)? cond : cond + 1;
 
-    if (idx)
+
+    tabla[0][a][b] = (tabla[0][a][b] == idx)? cond : cond + 1;
+
+    if (tabla[0][a][b] == 2)
         --nRestantes;
 
     return true;

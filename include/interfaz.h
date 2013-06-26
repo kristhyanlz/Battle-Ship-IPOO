@@ -78,6 +78,8 @@ string itostr(int a){
     temp[1] = 48;
     temp[2] = 48;
 
+    a = a/10;
+
     for(register int i = 1;a;++i){
         temp[i] = ((a%10) + 48);
         a = a/10;
@@ -87,7 +89,6 @@ string itostr(int a){
 }
 
 void game(){
-
     int cont = 0;
     ++cont;
     for (register int i = 0; i < 2; ++i){
@@ -97,12 +98,14 @@ void game(){
         Sleep(2000);
         system("cls");
     }
+
     bool turno = false;
     while (play[turno].nRestantes){/// Poner
+        cout << "Mi tabla de adivinaciones: \n";
         play[turno].imprimirTablero(true);
         char temp[2][3];//Una cordenada
         int coor[2];
-        cout << "  " <<play[0].name << "  Vs.\n" << "  " << play[1].name << "\n===========================================================\n" ;
+        cout << "\n  " <<play[0].name << "  Vs.\n" << "  " << play[1].name << "\n===========================================================\n" ;
         cout << "Es el turno de " << play[turno].name << " :\n";
 
         cin >> temp[0];
@@ -111,22 +114,47 @@ void game(){
         coor[0]= atoi(temp[0]);
         coor[1] = atoi(temp[1]);
 
-        if ( (( not coor[0]) or (not coor[1])) or (not play[not turno].pose(coor[0], coor[1], true)))
+        if ( (( not coor[0]) or (not coor[1])) or (not play[not turno].pose(coor[0], coor[1], true))){
+            system("cls");
+            cout << play[0].name << " ingresaste un numero invalido!!\n\n";
             continue;
+        }
 
-        play[turno].tabla[1][(coor[0])][(coor[1])] = play[not turno].tabla[1][(coor[0])][(coor[1])];
+        play[turno].tabla[1][(coor[0] - 1)][(coor[1] - 1)] = play[not turno].tabla[0][(coor[0] - 1)][(coor[1] - 1)];
 
         turno = not turno;
-        ++cont;
+
+        if (not turno)
+            ++cont;
+
+        system("pause");
         system("cls");
     }
+
     string texto = play[not turno].name;
     texto += "  Gano! en: ";
     texto += itostr(cont);
     texto += " turnos.";
     records.agregarDatos(texto);
-    cout << texto << endl; // GANO!
 
+    cout << texto << endl;
+
+    records.restart();
+    string line, acum;
+    getline(records.read, line);
+    acum = line;
+    acum += "\n";
+
+    while(records.read.good()){
+        getline(records.read, line);
+        acum += line;
+        acum += "\n";
+    }
+
+    cout << "\n===========================================================\n" <<  "P U N T U A C I O N E S\n  D E  L O S\n    J U G A D O R E S:\n===========================================================\n";
+    cout << acum << endl;
+
+    system("pause");
 
 }
 
