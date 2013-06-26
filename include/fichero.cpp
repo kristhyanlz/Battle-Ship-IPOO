@@ -25,6 +25,8 @@ void Fichero::agregarDatos(string text){
         acum += "\n";
     }
 
+    acum[acum.length() - 1] = '\0';
+
     clearf();
 
     write << text;

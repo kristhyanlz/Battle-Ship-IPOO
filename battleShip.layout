@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_layout_file>
 	<ActiveTarget name="Debug" />
-	<File name="include\fichero.cpp" open="1" top="0" tabpos="5">
-		<Cursor position="435" topLine="9" />
+	<File name="include\fichero.cpp" open="1" top="1" tabpos="5">
+		<Cursor position="465" topLine="6" />
 	</File>
 	<File name="include\fichero.h" open="1" top="0" tabpos="4">
 		<Cursor position="541" topLine="8" />
 	</File>
-	<File name="include\interfaz.h" open="1" top="1" tabpos="6">
-		<Cursor position="2295" topLine="3" />
+	<File name="include\interfaz.h" open="1" top="0" tabpos="6">
+		<Cursor position="2295" topLine="9" />
 	</File>
 	<File name="include\player.cpp" open="1" top="0" tabpos="3">
 		<Cursor position="1055" topLine="39" />
