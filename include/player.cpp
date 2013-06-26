@@ -1,7 +1,7 @@
 #include "player.h"
 
-Player::Player():id(sello){
-    ++sello;
+Player::Player(){
+
 }
 
 Player::~Player()
@@ -198,6 +198,5 @@ void Player::restart(bool idx){
     }
 }
 
+int Player::tam = 0;
 //Fichero Player::records = "mono.txt";
-
-int Player::sello = 0;

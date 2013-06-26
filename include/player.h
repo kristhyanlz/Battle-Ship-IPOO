@@ -3,6 +3,7 @@
 
 #include <iostream>
 //#include <unistd.h>
+//
 #include <windows.h>
 #include "fichero.h"
 
@@ -27,8 +28,8 @@ class Player
     protected:
     private:
         string name;
-        int tam, id, **tabla[2], nRestantes;
-        static int sello;
+        static int tam;
+        int **tabla[2], nRestantes;// tabla[0][i][j]
 };
 
 #endif // PLAYER_H

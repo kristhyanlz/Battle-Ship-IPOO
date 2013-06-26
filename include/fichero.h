@@ -2,7 +2,7 @@
 #define FICHERO_H
 
 #include <iostream>
-#include <unistd.h>// Aqui se encuentra la funcion: sleep(int);
+//#include <unistd.h>// Aqui se encuentra la funcion: sleep(int);
 //#include <lib for sleep>
 //#include <windows.h>
 #include <stdlib.h>// Aqui se encuentra la funcion: system("pause")
@@ -16,7 +16,7 @@ class Fichero
         Fichero(string _file);
         Fichero();
         virtual ~Fichero();
-        fstream write;
+        fstream write;//ofstream a;
         ifstream read;
         void agregarDatos(string text);
         void restart();
