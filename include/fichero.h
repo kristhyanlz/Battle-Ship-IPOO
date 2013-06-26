@@ -21,7 +21,6 @@ class Fichero
         void agregarDatos(string text);
         void restart();
         void clearf();
-        void operator = (string text);
         void ini(string  __file);
         //void hide(string & txt);
     protected:

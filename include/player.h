@@ -23,7 +23,6 @@ class Player
         friend void game();
     protected:
     private:
-        Fichero records;
         string name;
         int tam, id, **tabla[2], nRestantes;
         static int sello;

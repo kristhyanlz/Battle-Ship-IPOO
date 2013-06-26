@@ -1,7 +1,6 @@
 #include "player.h"
 
 Player::Player():id(sello){
-    records.ini("records.txt");
     ++sello;
 }
 
@@ -20,8 +19,6 @@ void Player::crear(int n){// void ini() // Metodo
     if (n < 10)
         n = 10;
 
-    int stUnidad = 1;
-
     tam = n;
 
     for(register int idx = 0; idx < 2 ; ++idx ){
@@ -35,14 +32,7 @@ void Player::crear(int n){// void ini() // Metodo
         }
     }
 
-
-
-
-    for (;n > 10; n = n - 5){
-        ++ stUnidad;
-    }
-
-    nRestantes = stUnidad + (stUnidad << 1) + (stUnidad* 3);
+    nRestantes = 6;
 }
 
 void Player::imprimirTablero(bool idx){
@@ -81,6 +71,10 @@ bool Player::pose(int a, int b, bool idx){
         return false;
 
     tabla[idx][a][b] = (tabla[idx][a][b] == 1)? cond : cond + 1;
+
+    if (idx)
+        --nRestantes;
+
     return true;
 }
 
@@ -91,24 +85,23 @@ bool Player::pintar(){
 
     char temp[2][3];//Una cordenada
 
-    cout << "Ingrese posicion del bote: ";
-    //cin >> a[0][0];
-    cin >> temp[0];
-    cin >> temp[1];
+        cout << "\nIngrese posicion del bote: ";
+        //cin >> a[0][0];
+        cin >> temp[0];
+        cin >> temp[1];
 
-    a[0][0] = atoi(temp[0]);
-    a[0][1] = atoi(temp[1]);
+        a[0][0] = atoi(temp[0]);
+        a[0][1] = atoi(temp[1]);
 
-    if ( ( not a[0][0]) or (not a[0][1]) ){
-        restart();
-        return false;
-    }
-    pose(a[0][0], a[0][1]);
+        if ( ( not a[0][0]) or (not a[0][1]) ){
+            restart();
+            return false;
+        }
 
-    imprimirTablero();////////////////////////////////////
+        pose(a[0][0] , a[0][1] );
 
     while(not check){
-        cout << "Ingrese posicion del buque: ";
+        cout << "\nIngrese posicion del buque: ";
         cin >> temp[0];
         cin >> temp[1];
 
@@ -121,24 +114,20 @@ bool Player::pintar(){
         }
         bool n = pose(a[0][0] , a[0][1] );
 
-        imprimirTablero();/////////////////////////////////////
-
-        cout << "Ingrese posicion: ";
+        cout << "\Ingrese posicion: ";
         cin >> temp[0];
         cin >> temp[1];
 
         a[1][0] = atoi(temp[0]);
         a[1][1] = atoi(temp[1]);
 
-        if ( (a[1][0] < 1) or (a[1][1] < 1) ){
+        if (not (a[1][0]) or (not a[1][1]) ){
             restart();
             return false;
         }
         n = n and pose(a[1][0], a[1][1]);
 
-        imprimirTablero();
-
-        check = ( ( (a[0][0] == a[1][0]) or (a[0][1] == a[1][1]) ) ?  true : false) and n;
+        check =  ( (a[0][0] == a[1][0]) or (a[0][1] == a[1][1]) ) and n;
         if(not check){
             for (register int i = 0; i < 2; ++i)
                 tabla[0][ (a[i][0] - 1) ][ (a[i][1] - 1) ] = 0;
@@ -152,7 +141,7 @@ bool Player::pintar(){
 
     while(not check){
 
-        cout << "Ingrese posicion del porta aviones: ";
+        cout << "\nIngrese posicion del porta aviones: ";
         cin >> temp[0];
         cin >> temp[1];
 
@@ -165,8 +154,6 @@ bool Player::pintar(){
         }
         bool n = pose(a[0][0] , a[0][1] );
 
-        imprimirTablero();
-
         cout << "Ingrese posicion: ";
         cin >> temp[0];
         cin >> temp[1];
@@ -175,8 +162,6 @@ bool Player::pintar(){
         a[1][1] = atoi(temp[1]);
 
         n = n and pose(a[1][0], a[1][1]);
-
-        imprimirTablero();
 
         if ( (not a[1][0]) or (not a[1][1]) ){
             restart();
@@ -191,9 +176,7 @@ bool Player::pintar(){
         a[2][1] = atoi(temp[1]);
         n = n and pose(a[2][0], a[2][1]);
 
-        imprimirTablero();
-
-        check = (check and (( (a[0][0] == a[2][0]) or (a[0][1] == a[2][1])) ?  true : false) ) and n;
+        check = (((a[0][0] == a[1][0]) and (a[0][0] == a[2][0]) ) or ((a[0][1] == a[1][1]) and (a[0][1]) == a[2][1]) ) and n;
 
         if (not check){
             for (register int i = 0; i < 3; ++i)

@@ -14,7 +14,6 @@ Fichero::~Fichero(){
 
 void Fichero::agregarDatos(string text){
     text += "\n";
-    ofstream temp("temp.bsd");
     string line, acum;
     getline(read, line);
     acum = line;
@@ -26,10 +25,10 @@ void Fichero::agregarDatos(string text){
         acum += "\n";
     }
 
-    temp << acum;
-    temp.close();
     clearf();
+
     write << text;
+    write << acum;
 }
 
 void Fichero::restart()
@@ -43,10 +42,6 @@ void Fichero::clearf()
 {
     ofstream tmp(file);
     restart();
-}
-
-void Fichero::operator = (string text){
-    ini(text);
 }
 
 void Fichero:: ini(string  __file)
