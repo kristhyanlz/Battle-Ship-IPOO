@@ -14,19 +14,19 @@ class Player
         Player();
         virtual ~Player();
         void crear(int n);
-        bool atacado(int & a, int & b);
-        bool pose(int & a, int & b);
-        void imprimirTablero();
+        bool pose(int a, int b, bool idx = false);
+        void imprimirTablero(bool idx = false);
         bool pintar();
+        void restart(bool idx = false);
 
         friend void login();
+        friend void game();
     protected:
     private:
         Fichero records;
         string name;
-        int tam, id, **tabla, nRestantes;
+        int tam, id, **tabla[2], nRestantes;
         static int sello;
-        bool ini;
 };
 
 #endif // PLAYER_H

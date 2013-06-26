@@ -76,13 +76,13 @@
 	<string>
 	<fstream>
 
-1372191522 source:c:\users\kristhyan zubia\desktop\github\battle-ship-ipoo\main.cpp
+1372201301 source:c:\users\kristhyan zubia\desktop\github\battle-ship-ipoo\main.cpp
 	"include/interfaz.h"
 
-1372191522 c:\users\kristhyan zubia\desktop\github\battle-ship-ipoo\include\interfaz.h
+1372205952 c:\users\kristhyan zubia\desktop\github\battle-ship-ipoo\include\interfaz.h
 	"player.h"
 
-1372194922 c:\users\kristhyan zubia\desktop\github\battle-ship-ipoo\include\player.h
+1372204624 c:\users\kristhyan zubia\desktop\github\battle-ship-ipoo\include\player.h
 	<iostream>
 	<windows.h>
 	"fichero.h"
@@ -94,7 +94,7 @@
 	<string>
 	<fstream>
 
-1372194698 source:c:\users\kristhyan zubia\desktop\github\battle-ship-ipoo\include\player.cpp
+1372205952 source:c:\users\kristhyan zubia\desktop\github\battle-ship-ipoo\include\player.cpp
 	"player.h"
 
 1372193994 source:c:\users\kristhyan zubia\desktop\github\battle-ship-ipoo\include\fichero.cpp

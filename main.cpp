@@ -5,7 +5,7 @@
 int main()
 {
     //cargando();
-
     while ( not start()){}
     login();
+    game();
 }
